@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For You, My Love 💌</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="memory-bg" aria-hidden="true">
+      <div
+        class="memory-slide active"
+        style="background-image: url(&quot;images/1.jpg&quot;)"
+      ></div>
+
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/2.jpg&quot;)"
+      ></div>
+
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/3.jpg&quot;)"
+      ></div>
+
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/4.jpg&quot;)"
+      ></div>
+
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/5.jpg&quot;)"
+      ></div>
+
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/6.jpg&quot;)"
+      ></div>
+
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/7.jpg&quot;)"
+      ></div>
+
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/8.jpg&quot;)"
+      ></div>
+
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/9.jpg&quot;)"
+      ></div>
+
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/10.jpg&quot;)"
+      ></div>
+
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/11.jpg&quot;)"
+      ></div>
+
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/12.jpg&quot;)"
+      ></div>
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/13.jpg&quot;)"
+      ></div>
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/14.jpg&quot;)"
+      ></div>
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/15.jpg&quot;)"
+      ></div>
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/16.jpg&quot;)"
+      ></div>
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/17.jpg&quot;)"
+      ></div>
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/18.jpg&quot;)"
+      ></div>
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/19.jpg&quot;)"
+      ></div>
+      <div
+        class="memory-slide"
+        style="background-image: url(&quot;images/20.jpg&quot;)"
+      ></div>
+
+      <div class="memory-overlay"></div>
+    </div>
+    <div class="ambient-light"></div>
+    <div class="petals-bg" id="petalsBg"></div>
+    <div class="stars" id="starsBg"></div>
+
+    <audio id="bgMusic" loop preload="auto">
+      <source src="music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main class="scene">
+      <p class="tagline">— A little something, just for you my lovee —</p>
+
+      <div class="envelope-wrap" id="envelopeWrap">
+        <div class="envelope" id="envelope">
+          <div class="env-body"></div>
+          <div class="env-left"></div>
+          <div class="env-right"></div>
+          <div class="env-bottom"></div>
+          <div class="letter-rise">
+            <div class="lr-peek">
+              <span>a letter for you ♡</span>
+            </div>
+          </div>
+          <div class="env-flap"></div>
+          <div class="wax-seal">💌</div>
+        </div>
+      </div>
+      <div class="chase-message" id="chaseMessage"></div>
+      <button class="chase-btn" id="chaseBtn">💌 Open my letter</button>
+
+      <div class="letter-modal" id="letterModal">
+        <!-- LIVE ROMANTIC ATMOSPHERE -->
+        <div class="love-particles" id="loveParticles" aria-hidden="true"></div>
+
+        <div class="floating-orbs" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="floating-butterflies" aria-hidden="true">
+          <span>🦋</span>
+          <span>🦋</span>
+          <span>🦋</span>
+        </div>
+
+        <div class="letter-sparkles" aria-hidden="true">
+          <span>✦</span>
+          <span>✧</span>
+          <span>♡</span>
+          <span>✦</span>
+          <span>·</span>
+          <span>✧</span>
+        </div>
+
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <article class="letter-paper">
+          <button class="close-btn" id="closeBtn" aria-label="Close letter">
+            ✕
+          </button>
+
+          <div class="letter-top-decoration">♡ ✦ ♡</div>
+          <p class="letter-date">September 01, 2026</p>
+          <p class="letter-salutation">My Dearest Lablabb Ingkay,</p>
+          <div class="divider">♡</div>
+          <div class="letter-body">
+            <p>
+              Hello, my lovee! Hihihihi. Happy 1st Monthsary poo! I love youuuu
+              sooo muchhhh, lablabb 💕💕💕
+            </p>
+
+            <p>
+              Sorry I don't have any gift to give you for our first monthsary,
+              lovee, but I promise that once I have enough money,
+              <em>babawi ako sa'yo.</em>
+            </p>
+
+            <p>
+              Being with you has shown me what it truly means to feel at home —
+              not in a place, but in a person.
+              <em>You are my home, lablabb.</em>
+              Hihihihi.
+            </p>
+
+            <p>
+              Thank you for your patience, your kindness, and your warmth. Thank
+              you for choosing and loving me, lablabb. Thank you for being
+              exactly who you are.
+            </p>
+
+            <p>
+              Our relationship is so unexpected no lablabb. I never expected us
+              to get to this point HAHAHA.
+            </p>
+
+            <p>
+              No matter where life takes us, I want you by my side. You are my
+              favorite person, my greatest blessing, and my best reason to smile
+              this way again.
+            </p>
+
+            <p>
+              You are my reason to trust and risk all my love again. I hope
+              you'll stay by my side through the highs and lows.
+            </p>
+
+            <p>
+              Even though you always doubt my love,
+              <em>
+                I will never get tired of making you feel how much I love you
+              </em>
+              and how happy I am that you came into my life.
+            </p>
+          </div>
+
+          <div class="divider">♡</div>
+
+          <div class="letter-closing">
+            <p>Forever yours,</p>
+
+            <p class="sig">with all my love 💕</p>
+
+            <button class="video-trigger-btn" id="videoTriggerBtn">
+              🎥 Watch the Video
+            </button>
+          </div>
+        </article>
+      </div>
+      <div class="video-modal" id="videoModal">
+        <div class="video-modal-overlay" id="videoModalOverlay"></div>
+        <div class="video-frame">
+          <button
+            class="video-close-btn"
+            id="videoCloseBtn"
+            aria-label="Close video"
+          >
+            ✕
+          </button>
+          <video id="memoryVideo" playsinline preload="auto">
+            <source src="video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </main>
+    <script>
+      const memorySlides = document.querySelectorAll(".memory-slide");
+
+      let memoryIndex = 0;
+
+      const memoryPhotos = [
+        "images/1.jpg",
+        "images/2.jpg",
+        "images/3.jpg",
+        "images/4.jpg",
+        "images/5.jpg",
+        "images/6.jpg",
+      ];
+
+      memoryPhotos.forEach((src) => {
+        const img = new Image();
+
+        img.src = src;
+      });
+
+      setInterval(() => {
+        if (!memorySlides.length) return;
+        memorySlides[memoryIndex].classList.remove("active");
+        memoryIndex = (memoryIndex + 1) % memorySlides.length;
+        memorySlides[memoryIndex].classList.add("active");
+      }, 6000);
+
+      const petalsBg = document.getElementById("petalsBg");
+
+      for (let i = 0; i < 6; i++) {
+        const petal = document.createElement("div");
+        petal.className = "petal";
+        petal.style.left = Math.random() * 100 + "vw";
+        petal.style.animationDuration = 10 + Math.random() * 8 + "s";
+        petal.style.animationDelay = Math.random() * 10 + "s";
+        petalsBg.appendChild(petal);
+      }
+      const starsBg = document.getElementById("starsBg");
+
+      for (let i = 10; i >= 0; i--) {
+        const star = document.createElement("div");
+        star.className = "star";
+        star.style.left = Math.random() * 100 + "vw";
+        star.style.top = Math.random() * 100 + "vh";
+        starsBg.appendChild(star);
+      }
+
+      const envelope = document.getElementById("envelope");
+      const envelopeWrap = document.getElementById("envelopeWrap");
+      const bgMusic = document.getElementById("bgMusic");
+
+      bgMusic.volume = 0.35;
+
+      const modal = document.getElementById("letterModal");
+      const chaseBtn = document.getElementById("chaseBtn");
+      const messageEl = document.getElementById("chaseMessage");
+      const closeBtn = document.getElementById("closeBtn");
+      const modalOverlay = document.getElementById("modalOverlay");
+
+      let chaseCount = 0;
+      let letterOpened = false;
+      let buttonLocked = false;
+
+      const chaseMessages = [
+        "Hihihihi, catch me first 😝",
+        "Hehehe, nopeee! 😝💕",
+        "Almosttt lovee 😝💕",
+        "Halaaa HAHAHA 😭💕",
+        "Blehhh! One moreee! 😝💕",
+        "Eto na baka umiyak pa ikaw eh! 😝💕",
+      ];
+
+      const buttonPositions = [
+        {
+          x: 88,
+          y: 16,
+        },
+
+        {
+          x: 12,
+          y: 18,
+        },
+
+        {
+          x: 12,
+          y: 82,
+        },
+
+        {
+          x: 88,
+          y: 82,
+        },
+
+        {
+          x: 50,
+          y: 52,
+        },
+
+        {
+          x: 50,
+          y: 50,
+        },
+      ];
+
+      function positionButtonUnderEnvelope() {
+        const rect = envelope.getBoundingClientRect();
+        const buttonHeight = chaseBtn.offsetHeight;
+        const buttonY = rect.bottom + 55 + buttonHeight / 2;
+
+        chaseBtn.style.left = window.innerWidth / 2 + "px";
+        chaseBtn.style.top = buttonY + "px";
+        chaseBtn.style.transform = "translate(-50%, -50%)";
+      }
+
+      function moveButtonToPercentage(x, y) {
+        const buttonWidth = chaseBtn.offsetWidth;
+        const buttonHeight = chaseBtn.offsetHeight;
+        const margin = 12;
+        let targetX = (window.innerWidth * x) / 100;
+        let targetY = (window.innerHeight * y) / 100;
+        const halfWidth = buttonWidth / 2;
+        const halfHeight = buttonHeight / 2;
+        targetX = Math.max(
+          halfWidth + margin,
+          Math.min(window.innerWidth - halfWidth - margin, targetX),
+        );
+
+        targetY = Math.max(
+          halfHeight + margin,
+          Math.min(window.innerHeight - halfHeight - margin, targetY),
+        );
+
+        chaseBtn.style.left = targetX + "px";
+        chaseBtn.style.top = targetY + "px";
+        chaseBtn.style.transform = "translate(-50%, -50%)";
+      }
+
+      function showChaseMessage(message) {
+        messageEl.textContent = message;
+        messageEl.classList.add("show");
+      }
+
+      function lockButtonForThreeSeconds() {
+        buttonLocked = true;
+        chaseBtn.disabled = true;
+        chaseBtn.classList.add("locked");
+        setTimeout(() => {
+          buttonLocked = false;
+
+          chaseBtn.disabled = false;
+
+          chaseBtn.classList.remove("locked");
+        }, 2000);
+      }
+
+      function moveButton() {
+        if (buttonLocked) {
+          return;
+        }
+
+        chaseCount++;
+
+        if (chaseCount > buttonPositions.length) {
+          return;
+        }
+
+        if (chaseCount === buttonPositions.length) {
+          const messageRect = messageEl.getBoundingClientRect();
+          const messageCenterX = messageRect.left + messageRect.width / 2;
+
+          const buttonY = messageRect.bottom + 45 + chaseBtn.offsetHeight / 2;
+
+          chaseBtn.style.left = messageCenterX + "px";
+          chaseBtn.style.top = buttonY + "px";
+          chaseBtn.style.transform = "translate(-50%, -50%)";
+        } else {
+          const position = buttonPositions[chaseCount - 1];
+          moveButtonToPercentage(position.x, position.y);
+        }
+
+        chaseBtn.classList.remove("runaway");
+        void chaseBtn.offsetWidth;
+        chaseBtn.classList.add("runaway");
+        showChaseMessage(chaseMessages[chaseCount - 1]);
+
+        lockButtonForThreeSeconds();
+        if (chaseCount === buttonPositions.length) {
+          setTimeout(() => {
+            const messageRect = messageEl.getBoundingClientRect();
+            const messageCenterX = messageRect.left + messageRect.width / 2;
+            const buttonY = messageRect.bottom + 45 + chaseBtn.offsetHeight / 2;
+            chaseBtn.style.left = messageCenterX + "px";
+            chaseBtn.style.top = buttonY + "px";
+            chaseBtn.style.transform = "translate(-50%, -50%)";
+            chaseBtn.textContent = "Okayyy, click me now 💌";
+            showChaseMessage("Okay naaa, you caught me! 🥺💕");
+          }, 2000);
+        }
+      }
+
+      chaseBtn.addEventListener("click", () => {
+        if (buttonLocked) {
+          return;
+        }
+
+        // Start music on the FIRST click
+        if (chaseCount === 0 && bgMusic.paused) {
+          bgMusic.volume = 0.35;
+          bgMusic.currentTime = 0;
+
+          const playPromise = bgMusic.play();
+
+          if (playPromise !== undefined) {
+            playPromise.catch((error) => {
+              console.log("Music could not play:", error);
+            });
+          }
+        }
+
+        if (letterOpened) {
+          openLetter();
+          return;
+        }
+
+        if (chaseCount < buttonPositions.length) {
+          moveButton();
+          return;
+        }
+
+        openEnvelope();
+      });
+
+      function openEnvelope() {
+        letterOpened = true;
+        buttonLocked = true;
+        chaseBtn.disabled = true;
+        envelope.classList.add("open");
+        spawnHearts();
+
+        setTimeout(() => {
+          openLetter();
+        }, 600);
+      }
+
+      function openLetter() {
+        modal.classList.add("visible");
+
+        // Lock the page behind the letter
+        document.body.style.overflow = "hidden";
+
+        buttonLocked = false;
+        chaseBtn.disabled = false;
+      }
+
+      closeBtn.addEventListener("click", closeLetter);
+      modalOverlay.addEventListener("click", closeLetter);
+
+      function closeLetter() {
+        modal.classList.remove("visible");
+
+        // Music continues playing even when the letter is closed
+        document.body.style.overflow = "";
+
+        if (letterOpened) {
+          envelopeWrap.classList.add("hidden");
+          messageEl.classList.remove("show");
+          chaseBtn.textContent = "💌 Read my letter again";
+        }
+      }
+
+      function spawnHearts() {
+        const rect = envelope.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const hearts = ["💕", "💖", "💗", "✨"];
+
+        for (let i = 0; i < 6; i++) {
+          const heart = document.createElement("div");
+          heart.className = "heart-burst";
+          heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+          heart.style.left = centerX + (Math.random() - 0.5) * 120 + "px";
+          heart.style.top = centerY + (Math.random() - 0.5) * 70 + "px";
+          document.body.appendChild(heart);
+          setTimeout(() => {
+            heart.remove();
+          }, 1100);
+        }
+      }
+
+      window.addEventListener("load", () => {
+        requestAnimationFrame(() => {
+          positionButtonUnderEnvelope();
+        });
+      });
+
+      window.addEventListener("resize", () => {
+        if (chaseCount === 0 && !letterOpened) {
+          positionButtonUnderEnvelope();
+        }
+      });
+
+      const videoModal = document.getElementById("videoModal");
+      const videoModalOverlay = document.getElementById("videoModalOverlay");
+      const videoTriggerBtn = document.getElementById("videoTriggerBtn");
+      const videoCloseBtn = document.getElementById("videoCloseBtn");
+      const memoryVideo = document.getElementById("memoryVideo");
+
+      let musicWasPlaying = false;
+
+      function openVideoModal() {
+        musicWasPlaying = !bgMusic.paused;
+        if (musicWasPlaying) {
+          bgMusic.pause();
+        }
+        videoModal.classList.add("visible");
+        document.body.style.overflow = "hidden";
+        memoryVideo.currentTime = 0;
+        const playPromise = memoryVideo.play();
+        if (playPromise !== undefined) {
+          playPromise.catch((error) => {
+            console.log("Video could not play:", error);
+          });
+        }
+      }
+
+      function closeVideoModal() {
+        memoryVideo.pause();
+        memoryVideo.currentTime = 0;
+        videoModal.classList.remove("visible");
+        document.body.style.overflow = letterOpened ? "hidden" : "";
+
+        if (musicWasPlaying) {
+          const playPromise = bgMusic.play();
+
+          if (playPromise !== undefined) {
+            playPromise.catch((error) => {
+              console.log("Music resume failed:", error);
+            });
+          }
+        }
+
+        musicWasPlaying = false;
+      }
+      videoTriggerBtn.addEventListener("click", openVideoModal);
+      videoCloseBtn.addEventListener("click", closeVideoModal);
+      videoModalOverlay.addEventListener("click", closeVideoModal);
+      document.addEventListener("keydown", (event) => {
+        if (
+          event.key === "Escape" &&
+          videoModal.classList.contains("visible")
+        ) {
+          closeVideoModal();
+        }
+      });
+
+      const loveParticles = document.getElementById("loveParticles");
+
+      const loveEmojis = ["♡", "♥", "💕", "💗", "💖", "✦", "✧", "·"];
+
+      function createLoveParticle() {
+        if (!letterModal.classList.contains("visible")) {
+          return;
+        }
+
+        const particle = document.createElement("span");
+
+        particle.className = "love-particle";
+
+        particle.textContent =
+          loveEmojis[Math.floor(Math.random() * loveEmojis.length)];
+
+        particle.style.left = Math.random() * 100 + "vw";
+
+        particle.style.fontSize = 10 + Math.random() * 14 + "px";
+
+        particle.style.animationDuration = 8 + Math.random() * 7 + "s";
+
+        particle.style.animationDelay = Math.random() * 2 + "s";
+
+        loveParticles.appendChild(particle);
+
+        setTimeout(() => {
+          particle.remove();
+        }, 17000);
+      }
+
+      setInterval(() => {
+        if (letterModal.classList.contains("visible")) {
+          createLoveParticle();
+        }
+      }, 850);
+
+      function createLiveSpark() {
+        if (!letterModal.classList.contains("visible")) {
+          return;
+        }
+
+        const spark = document.createElement("div");
+
+        spark.className = "live-spark";
+
+        spark.style.left = Math.random() * 100 + "vw";
+
+        spark.style.top = Math.random() * 100 + "vh";
+
+        document.body.appendChild(spark);
+
+        setTimeout(() => {
+          spark.remove();
+        }, 1800);
+      }
+
+      setInterval(() => {
+        if (letterModal.classList.contains("visible")) {
+          createLiveSpark();
+        }
+      }, 1200);
+    </script>
+  </body>
+</html>
