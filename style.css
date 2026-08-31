@@ -423,33 +423,43 @@
           backdrop-filter: blur(10px);
       }
 
-      .letter-paper {
-          position: relative;
-          width: 100%;
-          max-width: 720px;
-          max-height: 88svh;
-          overflow-y: auto;
-          overflow-x: hidden;
-          -webkit-overflow-scrolling: touch;
-          overscroll-behavior: contain;
-          color: var(--text);
-          border-radius: 28px;
-          padding: 62px clamp(28px, 6vw, 68px) 55px;
-          background: #fffdf9;
-          border: 1px solid rgba(213, 166, 244, 0.65);
-          box-shadow:
-              0 35px 100px rgba(0, 0, 0, 0.55),
-              0 0 0 1px rgba(255, 255, 255, 0.55),
-              0 0 45px rgba(173, 93, 220, 0.28),
-              inset 0 0 45px rgba(211, 170, 239, 0.12);
-          transform: translateY(25px) scale(0.96);
-          transition:
-              transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1),
-              box-shadow 0.4s ease;
+.letter-paper {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    max-height: 88svh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    color: var(--text);
+    border-radius: 28px;
+    padding: 62px clamp(28px, 6vw, 68px) 55px;
 
-          scrollbar-width: thin;
-          scrollbar-color: #c58cdd transparent;
-      }
+background: linear-gradient(
+    145deg,
+    #fdf9ff 0%,
+    #faf3fd 50%,
+    #f6ebfa 100%
+);
+
+    border: 1px solid rgba(196, 145, 218, 0.55);
+
+    box-shadow:
+        0 35px 100px rgba(0, 0, 0, 0.45),
+        0 0 0 1px rgba(255, 255, 255, 0.6),
+        0 0 45px rgba(173, 93, 220, 0.22),
+        inset 0 0 45px rgba(211, 170, 239, 0.10);
+
+    transform: translateY(25px) scale(0.96);
+
+    transition:
+        transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1),
+        box-shadow 0.4s ease;
+
+    scrollbar-width: thin;
+    scrollbar-color: #c58cdd transparent;
+}
 
       .letter-modal.visible .letter-paper {
           transform: translateY(0) scale(1);
