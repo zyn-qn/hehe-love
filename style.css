@@ -453,8 +453,6 @@
 
       .letter-modal.visible .letter-paper {
           transform: translateY(0) scale(1);
-
-          animation: letterGlow 4s ease-in-out infinite alternate;
       }
 
       @keyframes letterGlow {
@@ -715,23 +713,12 @@
           margin-bottom: 21px;
       }
 
-      /* =========================================================
-   EMPHASIZED LOVE LINES
-========================================================= */
-
       .letter-body em {
-          font-family: "Playfair Display", serif;
-
           color: #8d4da1;
-
+          font-family: "Playfair Display", serif;
           font-weight: 600;
-
           text-shadow: 0 1px 7px rgba(150, 79, 172, 0.12);
       }
-
-      /* =========================================================
-   CLOSING
-========================================================= */
 
       .letter-closing {
           margin-top: 30px;
@@ -872,14 +859,8 @@
 
           .letter-paper {
               max-height: 90svh;
-              height: 90svh;
-              border-radius: 22px;
-              padding: 50px 24px 38px;
-
-              overflow-y: auto;
-              overflow-x: hidden;
-              -webkit-overflow-scrolling: touch;
-              overscroll-behavior: contain;
+              border-radius: 20px;
+              padding: 48px 22px 36px;
           }
 
           .letter-body {
@@ -1236,7 +1217,7 @@
               0 0 20px rgba(207, 126, 232, 0.45),
               0 0 35px rgba(207, 126, 232, 0.2);
 
-          animation: orbFloat 7s ease-in-out infinite;
+          animation: orbFloat 11s ease-in-out infinite;
       }
 
       .floating-orbs span:nth-child(1) {
@@ -1321,7 +1302,7 @@
           filter:
               drop-shadow(0 0 6px rgba(213, 142, 237, 0.7));
 
-          animation: butterflyFloat 12s ease-in-out infinite;
+         animation: butterflyFloat 18s ease-in-out infinite;
       }
 
       .floating-butterflies span:nth-child(1) {
